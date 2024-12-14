@@ -2,6 +2,8 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Resources\MenuResource;
+use Datlechin\FilamentMenuBuilder\FilamentMenuBuilderPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -55,8 +57,14 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
-             ->plugins([
+            ->plugins([
                 SpotlightPlugin::make(),
+                FilamentMenuBuilderPlugin::make()
+                    ->usingResource(MenuResource::class)
+                    ->addLocations([
+                        'header' => 'Header',
+                        'footer' => 'Footer',
+                    ])
             ]);
     }
 }
