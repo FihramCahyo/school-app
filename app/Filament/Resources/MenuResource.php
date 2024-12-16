@@ -18,7 +18,7 @@ class MenuResource extends BaseMenuResource
 {
     // protected static ?string $model = Menu::class;
 
-    protected static ?string $navigationGroup = 'Navigation';
+    protected static ?string $navigationGroup = 'Manajemen Konten';
 
     public static function getNavigationBadge(): ?string
     {
