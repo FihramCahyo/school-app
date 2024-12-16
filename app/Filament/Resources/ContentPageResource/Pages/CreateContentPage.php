@@ -18,7 +18,7 @@ class CreateContentPage extends CreateRecord
         if (!$defaultMenu) {
             // Jika menu tidak ada, buat menu default
             $defaultMenu = MenuItem::create([
-                'name' => 'Default Menu',  // Sesuaikan nama menu
+                'title' => 'Default Menu',  // Sesuaikan nama menu
             ]);
         }
 

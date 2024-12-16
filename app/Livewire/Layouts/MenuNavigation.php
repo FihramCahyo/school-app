@@ -14,8 +14,6 @@ class MenuNavigation extends Component
     public function mount()
     {
         $this->menu = Menu::location('Header');
-
-        // dd($this->menu);
     }
 
     public function render()

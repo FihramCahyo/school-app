@@ -18,4 +18,10 @@ class ContentPage extends Model
     protected $casts = [
         'content' => 'json',
     ];
+
+    
+    // public function menu()
+    // {
+    //     return $this->belongsTo(\Datlechin\FilamentMenuBuilder\Models\MenuItem::class, 'menu_id');
+    // }
 }

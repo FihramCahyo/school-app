@@ -7,5 +7,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', HomePage::class);
+Route::get('{url}', HomePage::class)->name('custom-page')->where('url', '.*');
 

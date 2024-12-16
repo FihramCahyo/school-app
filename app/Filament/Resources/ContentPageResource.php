@@ -44,7 +44,8 @@ class ContentPageResource extends Resource
                 Forms\Components\Section::make('Konten')
                     ->schema([
                         GrapesJs::make('content')
-                            ->id('content'),
+                            ->id('content')
+                            ->required(),
                     ]),
             ]);
     }

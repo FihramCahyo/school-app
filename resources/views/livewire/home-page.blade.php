@@ -1,3 +1,3 @@
-<div>
-    <h1>Halaman Utama</h1>
+<div class="container mx-auto px-4">
+    {!! $data->content !!}
 </div>

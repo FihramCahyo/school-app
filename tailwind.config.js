@@ -9,6 +9,7 @@ export default {
         "./resources/**/*.js",
         "./resources/**/*.vue",
         "node_modules/preline/dist/*.js",
+        "./node_modules/dotswan-grapesjs/**/*",
     ],
     theme: {
         extend: {
